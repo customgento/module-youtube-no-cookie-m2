@@ -1,0 +1,17 @@
+{
+    "name": "customgento/youtube-no-cookie-m2",
+    "description": "Magento 2 module, which makes sure that YouTube product videos are always inserted via youtube-nocookie.com.",
+    "require": {
+        "php": "~7.2.0||~7.3.0||~7.4.0"
+    },
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "CustomGento\\YouTubeNoCookie\\": ""
+        }
+    }
+}
