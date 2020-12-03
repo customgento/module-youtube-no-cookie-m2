@@ -27,7 +27,7 @@ The installation procedure highly depends on your setup. In any case, you should
 7. `bin/magento cache:flush`
 
 ## Uninstallation
-The installation procedure depends on your setup:
+The uninstallation procedure depends on your setup:
 
 ### Uninstallation After Composer Installation
 1. `bin/magento module:uninstall CustomGento_YouTubeNoCookie`
