@@ -11,7 +11,7 @@ This extension for Magento 2 makes sure that all YouTube product videos are alwa
 The installation procedure highly depends on your setup. In any case, you should use a version control system like git and test the installation on a development system.
 
 ### Composer Installation
-1. `composer require customgento/youtube-no-cookie-m2`
+1. `composer require customgento/module-youtube-no-cookie-m2`
 2. `bin/magento module:enable CustomGento_YouTubeNoCookie`
 3. `bin/magento setup:upgrade`
 4. `bin/magento setup:di:compile`
@@ -41,7 +41,7 @@ The installation procedure depends on your setup:
 4. `rm -r app/code/CustomGento/YouTubeNoCookie`
 
 ## Support
-If you have any issues with this extension, feel free to [open an issue on GitHub](https://github.com/customgento/youtube-no-cookie-m2/issues).
+If you have any issues with this extension, feel free to [open an issue on GitHub](https://github.com/customgento/module-youtube-no-cookie-m2/issues).
 
 ## Licence
 [Open Software License 3.0](https://opensource.org/licenses/OSL-3.0)
