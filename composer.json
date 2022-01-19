@@ -1,6 +1,6 @@
 {
     "name": "customgento/module-youtube-no-cookie-m2",
-    "description": "Magento 2 module, which makes sure that YouTube product videos are always inserted via youtube-nocookie.com.",
+    "description": "YouTube NoCookie for Magento 2 makes sure that all YouTube product videos are always inserted via the cookie-free domain youtube-nocookie.com.",
     "require": {
         "ext-pcre": "*",
         "magento/module-catalog": "~103.0||~104.0",
