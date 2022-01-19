@@ -1,9 +1,6 @@
 # YouTube NoCookie for Magento 2
 YouTube NoCookie for Magento 2 makes sure that all YouTube product videos are always inserted via the cookie-free domain youtube-nocookie.com. It tries to detect all possible YouTube URLs for that and adapt the URL accordingly to always be compliant with the current EU rules.
 
-## Description
-This extension for Magento 2 makes sure that all YouTube product videos are always inserted via the cookie-free domain youtube-nocookie.com. It tries to detect all possible YouTube URLs for that.
-
 ## Compatibility
 * Magento >= 2.3
 
