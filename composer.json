@@ -5,7 +5,7 @@
         "ext-pcre": "*",
         "magento/module-catalog": "~103.0||~104.0",
         "magento/module-product-video": "~100.0",
-        "php": "~7.3.0||~7.4.0||~8.1.0"
+        "php": "~7.3.0||~7.4.0||~8.1.0||~8.2.0"
     },
     "type": "magento2-module",
     "license": "OSL-3.0",
