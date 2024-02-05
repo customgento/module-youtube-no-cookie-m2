@@ -16,8 +16,8 @@ class ProductPageVideoUrlTest extends AbstractController
         $this->dispatch('catalog/product/view/id/1');
 
         $body = $this->getResponse()->getBody();
-        self::assertNotContains('youtube.com', $body);
-        self::assertNotContains('youtu.be', $body);
-        self::assertContains('youtube-nocookie.com', $body);
+        self::assertStringNotContainsString('youtube.com', $body);
+        self::assertStringNotContainsString('youtu.be', $body);
+        self::assertStringNotContainsString('youtube-nocookie.com', $body);
     }
 }
