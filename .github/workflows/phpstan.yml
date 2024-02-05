@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: extdn/github-actions-m2/magento-phpstan@master
         with:
-          composer_name: customgento/module-mass-update-tier-prices-m2
+          composer_name: customgento/module-youtube-no-cookie-m2
