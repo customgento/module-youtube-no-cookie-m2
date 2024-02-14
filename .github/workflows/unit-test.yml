@@ -1,5 +1,5 @@
 name: ExtDN M2 Unit Tests
-on: [push]
+on: [push, pull_request]
 jobs:
   unit-tests-2-4-4-p6-8-1:
     name: Magento 2.4.4-p6 PHP 8.1 Integration Tests
