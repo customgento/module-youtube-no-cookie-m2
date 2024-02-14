@@ -22,6 +22,9 @@ class ChangeVideoUrlPlugin
         $this->videoUrlConverter = $videoLinkConverter;
     }
 
+    /**
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     */
     public function afterGetMediaGalleryImages(Product $product, Collection $collection): Collection
     {
         $collection->walk(function (DataObject $object) {
