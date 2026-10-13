@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace CustomGento\YouTubeNoCookie\Test\Unit\Model;
 
 use CustomGento\YouTubeNoCookie\Model\VideoUrlConverter;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class VideoUrlConverterTest extends TestCase
@@ -25,12 +26,13 @@ class VideoUrlConverterTest extends TestCase
      *
      * @dataProvider urlDataProvider
      */
+    #[DataProvider('urlDataProvider')]
     public function testConvert(string $url, string $noCookieUrl): void
     {
         self::assertEquals($noCookieUrl, $this->videoUrlConverter->convert($url));
     }
 
-    public function urlDataProvider(): array
+    public static function urlDataProvider(): array
     {
         return [
             [
