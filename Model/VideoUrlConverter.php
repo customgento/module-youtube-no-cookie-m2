@@ -28,18 +28,18 @@ class VideoUrlConverter
     {
         $pattern = '%^        # Match any youtube URL
             (?:https?:\/\/)?  # Optional scheme. Either http or https
-            (?:www\.)?        # Optional www subdomain
+            (?:www\.|m\.)?    # Optional www or mobile subdomain
             (?:               # Group host alternatives
               youtu\.be\/     # Either youtu.be,
               |youtube\.com   # or youtube.com
               (?:             # Group path alternatives
                 \/embed\/     # Either /embed/
                 |\/v\/        # or /v/
-                |\/watch\?v=  # or /watch\?v=
+                |\/watch\?(?:[^&#]*&)*v=  # or /watch with v as any parameter
               )               # End path alternatives.
             )                 # End host alternatives.
             ([\w-]{10,12})    # Allow 10-12 for 11 char youtube id.
-            (?:&.*)*          # additional parameters
+            (?:[&?#\/].*)?   # additional parameters, query or fragment
             $%x';             # ignore whitespaces
         $result  = preg_match($pattern, $url, $matches);
         if ($result) {
